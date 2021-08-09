@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages {
+            stage ('Checkout') {
+                steps {
+                    git url: 'https://repos.currenciesdirect.com:8443/scm/auto/cucumberautoframework.git', branch: "feature/POC1_Auto", credentialsId: "devops"
+                }
+            }
+            stage('Build') {
+                steps {
+                    echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                    sh "mvn -f CucumberSeleniumProject/pom.xml  test"
+                }
+             }
+    }
+}

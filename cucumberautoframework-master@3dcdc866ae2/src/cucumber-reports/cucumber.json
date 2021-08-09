@@ -1,0 +1,144 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8954838,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseStep.intialization()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login to Atlas with valid credential",
+        "description": "",
+        "id": "atlas-login-feature;login-to-atlas-with-valid-credential;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 156103,
+              "error_message": "java.lang.NullPointerException\n\tat com.cucumber.stepdefinition.BaseStep.finish(BaseStep.java:103)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat cucumber.runtime.Utils$1.call(Utils.java:37)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\n\tat cucumber.runtime.Utils.invoke(Utils.java:31)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:222)\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:210)\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:204)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:50)\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:163)\n\tat cucumber.runtime.Runtime.run(Runtime.java:120)\n\tat cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:43)\n\tat TestNGRunnerCL.run_cukes(TestNGRunnerCL.java:18)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:230)\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.run(AbstractTestNGCucumberTests.java:19)\n\tat org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:242)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:576)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\n\tat org.testng.TestRunner.run(TestRunner.java:505)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1137)\n\tat org.testng.TestNG.runSuites(TestNG.java:1049)\n\tat org.testng.TestNG.run(TestNG.java:1017)\n\tat org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)\n\tat org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)\n\tat org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "BaseStep.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 126134474,
+              "error_message": "java.lang.NullPointerException\n\tat com.selenium.utillity.Reusables.takeSnapShot(Reusables.java:121)\n\tat com.selenium.utillity.Reusables.openBrowser(Reusables.java:41)\n\tat com.cucumber.stepdefinition.AltasStepDefination.userLaunchedApplicationThroughBrowser(AltasStepDefination.java:49)\n\tat ✽.Given User launched application through \"Chrome\" browser(BackEnd Applications/Atlas/AtlasLogin.feature:6)\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User launched application through \"Chrome\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chrome",
+                  "offset": 35
+                }
+              ],
+              "location": "AltasStepDefination.userLaunchedApplicationThroughBrowser(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User navigate to Atlas Application \"AtlasUrl\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AtlasUrl",
+                  "offset": 36
+                }
+              ],
+              "location": "AltasStepDefination.userNavigateToAtlasApplication(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enter UserName \"AtlasUserName\" password \"AtlasPassword\" and click log In button on Altas Application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AtlasUserName",
+                  "offset": 21
+                },
+                {
+                  "val": "AtlasPassword",
+                  "offset": 46
+                }
+              ],
+              "location": "AltasStepDefination.userEnterUserNamePasswordAndClickLogInButtonOnAltasApplication(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User successfully landed on Atlas Dashboard page",
+            "match": {
+              "location": "AltasStepDefination.userSuccessfullyLandedOnAtlasDashboardPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User clicks on Logout button to logoff application",
+            "match": {
+              "location": "AltasStepDefination.userClicksOnLogoutButtonToLogoffApplication()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Atlas_LoginScenario"
+          },
+          {
+            "line": 4,
+            "name": "@POC2"
+          }
+        ]
+      }
+    ],
+    "name": "Atlas Login feature",
+    "description": "",
+    "id": "atlas-login-feature",
+    "keyword": "Feature",
+    "uri": "BackEnd Applications/Atlas/AtlasLogin.feature"
+  }
+]
