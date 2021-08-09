@@ -3,7 +3,7 @@ Feature: Login feature
   @Login_positive @POC_1 @TORFX @compareDOM @TORFX_POSITIVE
     @FrontEnd @TORvsFCG
   Scenario Outline: Verify that user is able to login FCG application successfully
-    Given I launched application through "<browser>"
+    Given I launched new application through "<browser>"
     And I navigate to FCG portal "<urlName>"
     When I enter UserName "<emailAddress>" password "<password>" and click login button
     Then I landed on Dashboard page successfully
